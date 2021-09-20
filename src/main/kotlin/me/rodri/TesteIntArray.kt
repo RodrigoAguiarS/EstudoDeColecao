@@ -20,7 +20,7 @@ fun main() {
     for (index in valor.indices){
         println(valor[index])
     }
-    //ordenando por padrão no menor para o mair com sort()
+    //ordenando por padrão no menor para o maior com sort()
     println("---------------------------")
     valor.sort()
     for (values in valor) {
