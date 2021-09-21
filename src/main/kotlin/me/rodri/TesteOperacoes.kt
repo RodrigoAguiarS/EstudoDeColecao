@@ -9,7 +9,7 @@ fun main() {
     println("Maior salario: ${salarios.maxOrNull()}")
     println("Menor salario: ${salarios.minOrNull()}")
     println("Média salario: ${salarios.average()}")
-    //metedo de filtro.
+    //metodo de filtro.
     val salariosFilter2500 = salarios.filter {
         it > 2500.0
     }
