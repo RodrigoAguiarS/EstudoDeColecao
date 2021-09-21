@@ -14,8 +14,19 @@ fun main() {
         it > 2500.0
     }
     println("___________________")
-    salariosFilter2500.forEach {
+    salariosFilter2500.forEach{
         println(it)
     }
-
+    println("___________________")
+    println(salarios.find{
+        it == 2250.0
+    })
+    println("___________________")
+    println(salarios.any{
+        it == 1000.0
+    })
+    println("___________________")
+    println(salarios.any{
+        it == 500.0
+    })
 }
