@@ -1,9 +1,9 @@
 package me.rodri
 
 fun main() {
-    val joao = funcionario("João", 2000.0, "CLT")
-    val pedro = funcionario("Pedro", 1500.0, "PJ")
-    val maria = funcionario("Maria", 4000.0, "CLT")
+    val joao = Funcionario("João", 2000.0, "CLT")
+    val pedro = Funcionario("Pedro", 1500.0, "PJ")
+    val maria = Funcionario("Maria", 4000.0, "CLT")
 
     val funcionarios = listOf(joao, pedro, maria)
 
@@ -26,16 +26,4 @@ fun main() {
         it.tipoContratacao}.
     forEach{
         println(it)}
-}
-data class funcionario(
-    val nome: String,
-    val salario: Double,
-    val tipoContratacao: String
-    ){
-    override fun toString(): String =
-        """
-            nome:    $nome
-            salario: $salario
-            tipoContracao: $tipoContratacao
-        """.trimIndent()
 }
